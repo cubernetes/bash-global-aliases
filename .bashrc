@@ -211,6 +211,7 @@ wrap_other_completions () {
 	done < <(complete | grep -Fv -e ' -F _compwrap' -e ' -D' -e ' -C' -e ' -F')
 }
 
+# TODO: Refactor into 1 function, instead of having 3 almost identical ones
 wrap_minus_F_completions
 wrap_minus_C_completions
 wrap_other_completions
